@@ -1,0 +1,6 @@
+<h1>Refreshes#index</h1>
+<% @refreshes.each do |n| %>
+	<li> <%= n.not %> 
+	<%= link_to "details", refresh_path(n) %>
+	</li>
+<% end %>
